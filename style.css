@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #a2f7a2;
+}
+.display {
+  width: 800px;
+  height: 300px;
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1 h1"
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8"
+    ". box9 box9 .";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+.box {
+  background-color: violet;
+  font-size: 48px;
+  font-weight: 600;
+  color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+.box:nth-child(1) {
+  background-color: violet;
+  grid-area: box1;
+}
+.box:nth-child(2) {
+  background-color: indigo;
+  grid-area: box2;
+}
+.box:nth-child(3) {
+  background-color: blue;
+  grid-area: box3;
+}
+.box:nth-child(4) {
+  background-color: green;
+  grid-area: box4;
+}
+.box:nth-child(5) {
+  background-color: yellow;
+  grid-area: box5;
+}
+.box:nth-child(6) {
+  background-color: orange;
+  grid-area: box6;
+}
+.box:nth-child(7) {
+  background-color: red;
+  grid-area: box7;
+}
+.box:nth-child(8) {
+  background-color: tomato;
+  grid-area: box8;
+}
+.box:nth-child(9) {
+  background-color: yellowgreen;
+  grid-area: box9;
+}
+
+.box.active {
+  background-color: aquamarine;
+  color: #000;
+}
+.display h1 {
+  margin-bottom: 30px;
+  grid-area: h1;
+  text-align: center;
+}
